@@ -18,3 +18,10 @@ source_data_url: https://dvc-aiops-nlp.s3.amazonaws.com/data.xml
 source_download_dirs:
   data_dir: data
   data_file: data.xml
+
+plots:
+  PRC: prc.json
+  ROC: roc.json
+
+metrics:
+  SCORES: scores.json
