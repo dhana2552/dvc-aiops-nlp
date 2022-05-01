@@ -22,3 +22,15 @@ def save_json(path: str, data: dict) -> None:
         json.dump(data, f, indent=4)
 
     logging.info(f"json file saved at: {path}")
+    
+def get_df(path_to_data: str, sep: str="\t") -> pd.DataFrame:
+    df = pd.read_csv(
+        path_to_data,
+        header=None,
+        encoding="utf-8",
+        delimiter=sep,
+        names=["id", "label", "text"] 
+    )
+    logging.info(f"dataframe loaded from: {path_to_data} and its size is {df.shape}\n")
+    return df
+    
