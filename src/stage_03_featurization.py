@@ -3,11 +3,8 @@ import os
 import logging
 from utils.common import read_yaml, create_directories, get_df
 from utils.featurize import save_matrix
-import random
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-from cleantext import clean
-import re
 
 
 STAGE = "stage 03 featurization" ## <<< change stage name 
