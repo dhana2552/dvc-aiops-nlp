@@ -8,6 +8,8 @@ artifacts:
   FEATURIZED_DATA: featured
   FEATURIZED_TRAIN_DATA: train.pkl
   FEATURIZED_TEST_DATA: test.pkl
+  MODEL_DIR: model
+  MODEL_NAME: model.pkl
   
 
 source_data_url: https://dvc-aiops-nlp.s3.amazonaws.com/data.xml
