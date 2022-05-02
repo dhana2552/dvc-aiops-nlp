@@ -3,7 +3,6 @@ from tqdm import tqdm
 import random
 import xml.etree.ElementTree as ET
 import re
-from cleantext import clean
 
 def process_posts(f_in, f_out_train, f_out_test, target_tag, split):
     line_num = 1
